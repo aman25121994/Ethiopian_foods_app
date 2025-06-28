@@ -32,7 +32,7 @@ class _CategoryScreenState extends ConsumerState<CategoryScreen> {
     ref.read(categoryProvider.notifier).setCategories(categories);
 
     for (var category in categories) {
-      if (category.name == 'Popular') {
+      if (category.name == 'Traditional') {
         setState(() {
           _selectedCategory = category;
         });

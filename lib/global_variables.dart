@@ -1,1 +1,1 @@
-String uri = "http://10.144.37.222:3000";
+String uri = "https://backend-api-wl7k.onrender.com";

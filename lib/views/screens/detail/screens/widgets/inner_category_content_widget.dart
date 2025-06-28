@@ -114,8 +114,7 @@ class _InnerCategoryContentWidgetState
                   );
                 }
               }),
-          const ReusableTextWidget(
-              title: 'Popular Foods', subtitle: 'View all'),
+          const ReusableTextWidget(title: 'Popular Foods', subtitle: ''),
           FutureBuilder(
             future: futureProducts,
             builder: (context, snapshot) {

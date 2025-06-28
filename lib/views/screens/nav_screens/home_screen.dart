@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               CategoryItemWidget(),
               ReusableTextWidget(
                 title: 'Popular Foods',
-                subtitle: 'view all',
+                subtitle: '',
               ),
               PopularProductWidget(),
             ],

@@ -32,22 +32,24 @@ class MyApp extends ConsumerWidget {
     SystemChrome.setSystemUIOverlayStyle(
         const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: FutureBuilder(
-            future: _checkTokenAndSetUser(ref),
-            builder: (context, snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
-              final user = ref.watch(userProvider);
-              return user != null ? MainScreen() : LoginScreen();
-            }));
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: MainScreen(), // delete this and uncomment the below
+      //  //home: FutureBuilder(
+      //     future: _checkTokenAndSetUser(ref),
+      //     builder: (context, snapshot) {
+      //      if (snapshot.connectionState == ConnectionState.waiting) {
+      //        return Center(
+      //          child: CircularProgressIndicator(),
+      //       );
+      //     }
+      //    final user = ref.watch(userProvider);
+      //    return user != null ? MainScreen() : LoginScreen();
+      //  }));
+    );
   }
 }

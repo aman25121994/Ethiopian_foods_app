@@ -1,3 +1,4 @@
+import 'package:ethiopian_foods_app/views/screens/detail/screens/search_product_screen.dart';
 import 'package:flutter/material.dart';
 
 class InnerHeaderWidget extends StatelessWidget {
@@ -17,7 +18,7 @@ class InnerHeaderWidget extends StatelessWidget {
               fit: BoxFit.cover,
             ),
             Positioned(
-              left: 16,
+              left: 13,
               top: 68,
               child: IconButton(
                   onPressed: () {
@@ -29,12 +30,18 @@ class InnerHeaderWidget extends StatelessWidget {
                   )),
             ),
             Positioned(
-              left: 64,
-              top: 60,
+              left: 60,
+              top: 62,
               child: SizedBox(
                 width: 250,
                 height: 50,
                 child: TextField(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return SearchProductScreen();
+                    }));
+                  },
                   decoration: InputDecoration(
                     hintText: 'Enter Text',
                     hintStyle: const TextStyle(

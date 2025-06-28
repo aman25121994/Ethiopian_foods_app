@@ -26,7 +26,7 @@ class _InnerCategoryScreenState extends State<InnerCategoryScreen> {
       const FavoriteScreen(),
       const CategoryScreen(),
       const AiScreen(),
-      AccountScreen(),
+      //AccountScreen(),
     ];
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
@@ -60,12 +60,12 @@ class _InnerCategoryScreenState extends State<InnerCategoryScreen> {
                 width: 25,
               ),
               label: "AI"),
-          BottomNavigationBarItem(
-              icon: Image.asset(
-                "assets/icons/user.png",
-                width: 25,
-              ),
-              label: "Account"),
+          // BottomNavigationBarItem(
+          // icon: Image.asset(
+          //  "assets/icons/user.png",
+          //   width: 25,
+          //   ),
+          //   label: "Account"),
         ],
       ),
       body: pages[pageIndex],

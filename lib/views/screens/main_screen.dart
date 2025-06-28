@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen> {
     const FavoriteScreen(),
     const CategoryScreen(),
     const AiScreen(),
-    AccountScreen(),
+    // AccountScreen(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -53,12 +53,12 @@ class _MainScreenState extends State<MainScreen> {
                 width: 25,
               ),
               label: "AI"),
-          BottomNavigationBarItem(
-              icon: Image.asset(
-                "assets/icons/user.png",
-                width: 25,
-              ),
-              label: "Account"),
+          //  BottomNavigationBarItem(
+          //      icon: Image.asset(
+          //       "assets/icons/user.png",
+          //       width: 25,
+          //    ),
+          //    label: "Account"),
         ],
       ),
       body: _pages[_pageIndex],
